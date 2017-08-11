@@ -7,7 +7,7 @@
     },
     "interactions": [
         {
-            "description": "a request for Foos",
+            "description": "a request for Courses",
             "request": {
                 "method": "GET",
                 "path": "/courses"

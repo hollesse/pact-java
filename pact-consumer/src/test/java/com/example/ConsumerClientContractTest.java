@@ -25,7 +25,7 @@ public class ConsumerClientContractTest {
 	        Map<String, String> headers = new HashMap<>();
 	        headers.put("Content-Type", "application/json;charset=UTF-8");
 
-	        return builder.uponReceiving("a request for Foos")
+	        return builder.uponReceiving("a request for Courses")
 	                .path("/courses")
 	                .method("GET")
 
