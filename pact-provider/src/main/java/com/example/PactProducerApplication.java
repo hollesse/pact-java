@@ -19,8 +19,8 @@ public class PactProducerApplication {
 		SpringApplication.run(PactProducerApplication.class, args);
 	}
 	
-    @RequestMapping(value = "/foos", method = RequestMethod.GET)
-    public ResponseEntity<List<Foo>> foos() {
-        return new ResponseEntity<>(Arrays.asList(new Foo(42), new Foo(100)), HttpStatus.OK);
+    @RequestMapping(value = "/courses", method = RequestMethod.GET)
+    public ResponseEntity<List<Course>> courses() {
+        return new ResponseEntity<>(Arrays.asList(new Course("TINF15AIBC",21), new Course("TINF15AIBI",23)), HttpStatus.OK);
     }
 }

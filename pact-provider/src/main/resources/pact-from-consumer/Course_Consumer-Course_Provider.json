@@ -1,16 +1,16 @@
 {
     "provider": {
-        "name": "Foo_Provider"
+        "name": "Course_Provider"
     },
     "consumer": {
-        "name": "Foo_Consumer"
+        "name": "Course_Consumer"
     },
     "interactions": [
         {
             "description": "a request for Foos",
             "request": {
                 "method": "GET",
-                "path": "/foos"
+                "path": "/courses"
             },
             "response": {
                 "status": 200,
@@ -19,10 +19,12 @@
                 },
                 "body": [
                     {
-                        "value": 42
+                        "name": "TINF15AIBC",
+                        "numberOfStudents": 21
                     },
                     {
-                        "value": 100
+                        "name": "TINF15AIBI",
+                        "numberOfStudents": 23
                     }
                 ]
             }

@@ -18,8 +18,8 @@ public class ConsumerClient{
         this.restTemplate = new RestTemplate();
     }
 
-    public List<Foo> foos() {
-        ParameterizedTypeReference<List<Foo>> responseType = new ParameterizedTypeReference<List<Foo>>() {};
-        return restTemplate.exchange(url + "/foos", HttpMethod.GET, null, responseType).getBody();
+    public List<Course> courses() {
+        ParameterizedTypeReference<List<Course>> responseType = new ParameterizedTypeReference<List<Course>>() {};
+        return restTemplate.exchange(url + "/courses", HttpMethod.GET, null, responseType).getBody();
     }
 }
